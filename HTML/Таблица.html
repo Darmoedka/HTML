@@ -1,0 +1,539 @@
+<html>
+<head>
+<title>
+    Таблица
+</title>
+</head>
+<body bgcolor = "#FFB6C1">
+    <h5 align = "center"><font color = "#9370DB">Меню</font></h5>
+    <table align = "center" cellspacing = "0" cellpadding = "5">
+            <tr>
+                <td><a href = "Неизведанное%20ДВФУ.html">Неизведанное ДВФУ</a></td>
+                <td><a href = "Таблица.html">Таблица</a></td>
+            </tr>
+        </table>
+    <h1 align = "center"> <font color = "#9370DB"> Таблица </font> </h1>
+    
+    <p>
+        <details>
+            <summary>График</summary>
+            <br>
+            <form>
+                <label><b> Ось X:</b><br>
+                    <input type = "radio" name = "Y" value = "type"> Тип <br>
+                    <input type = "radio" name = "Y" value = "oreal"> Место обитания <br>
+                </label>
+                <br>
+                <label><b> Ось Y: </b><br>
+                    <input type = "radio" name = "X" value = "maxtype"> Максимальная степень опасности <br>
+                    <input type = "radio" name = "X" value = "maxkol"> Максимальное количество <br>
+                    <input type = "radio" name = "X" value = "maxprocent"> Максимальная вероятность контакта <br>
+                    <input type = "radio" name = "X" value = "mindamage"> Минимальныя степень опасности <br>
+                    <input type = "radio" name = "X" value = "minweight"> Минимальное количество <br>
+                    <input type = "radio" name = "X" value = "minprice"> Минимальная вероятность контакта <br><br>
+                </label>
+                <input type = "submit" value = "Построить">
+            </form>
+        </details>
+    </p>
+    <p>
+        <details>
+            <summary>Фильтр</summary>
+            <br>
+            <form>
+                <label> Название:
+                    <input type = "text" name = "name" id = "name">
+                </label> <br><br>
+                <label> Тип:
+                    <select name = "type">
+                        <option value = "0">Студент</option>
+                        <option value = "1">Преподаватель</option>
+                        <option value = "2">Охранник</option>
+                        <option value = "3">Предмет</option>
+                    </select>
+                </label> <br><br>
+                <label> Место обитания:
+                    <select name = "oreal">
+                        <option value = "0">-</option>
+                        <option value = "1">Общежитие</option>
+                        <option value = "2">Корпус</option>
+                        <option value = "3">Город</option>
+                        <option value = "4">Учебный кабинет</option>
+                    </select>
+                </label> <br><br>
+                <label> Степень опасности:
+                    <input type = "number" name = "damage" id = "damage">
+                </label> <br><br>
+                <label> Количество:
+                    <input type = "number" name = "weight" id = "weight">
+                </label> <br><br>
+                <label> Вероятность контакта:
+                    <input type = "number" name = "price" id = "price">
+                </label> <br><br>
+                <input type = "submit" value = "Найти">
+            </form>
+        </details>
+    </p>
+    <p>
+        <details>
+            <summary>Сортировка</summary>
+            <br>
+            <form>
+                <label> Первый уровень:
+                    <select name = "first">
+                        <option value = "0">Нет</option>
+                        <option value = "1">Название</option>
+                        <option value = "2">Тип</option>
+                        <option value = "3">Место обитания</option>
+                        <option value = "4">Степень опасности</option>
+                        <option value = "5">Количество</option>
+                        <option value = "6">Вероятность контакта</option>
+                    </select>
+                </label> <br><br>
+                <label> Второй уровень:
+                    <select name = "second">
+                        <option value = "0">Нет</option>
+                        <option value = "1">Название</option>
+                        <option value = "2">Тип</option>
+                        <option value = "3">Место обитания</option>
+                        <option value = "4">Степень опасности</option>
+                        <option value = "5">Количество</option>
+                        <option value = "6">Вероятность контакта</option>
+                    </select>
+                </label> <br><br>
+                <label> Третий уровень:
+                    <select name = "third">
+                        <option value = "0">Нет</option>
+                        <option value = "1">Название</option>
+                        <option value = "2">Тип</option>
+                        <option value = "3">Место обитания</option>
+                        <option value = "4">Степень опасности</option>
+                        <option value = "5">Количество</option>
+                        <option value = "6">Вероятность контакта</option>
+                    </select>
+                </label> <br><br>
+                <input type = "submit" value = "Сортировать">
+            </form>
+        </details>
+    </p>
+    <table cellspacing = "0" border = "1" align = "center">
+        <tr>
+            <th>Название</th>
+            <th>Тип</th>
+            <th>Место обитания</th>
+            <th>Степень опасности</th>
+            <th>Количество</th>
+            <th>Вероятность контакта</th>
+        </tr>
+        <tr>
+            <td>Лизун</td>
+            <td>Студент</td>
+            <td>Учебный кабинет</td>
+            <td>4</td>
+            <td>516</td>
+            <td>42</td>
+        </tr>
+        <tr>
+            <td>Дядюшка</td>
+            <td>Охранник</td>
+            <td>Общежитие, Корпус</td>
+            <td>1</td>
+            <td>1</td>
+            <td>95</td>
+        </tr>
+        <tr>
+            <td>Староста</td>
+            <td>Студент</td>
+            <td>Корпус</td>
+            <td>3</td>
+            <td>1</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>Автомат с напитками</td>
+            <td>Предмет</td>
+            <td>Корпус</td>
+            <td>3</td>
+            <td>25</td>
+            <td>43</td>
+        </tr>
+        <tr>
+            <td>Загадочник</td>
+            <td>Преподаватель</td>
+            <td>Учебный кабинет</td>
+            <td>8</td>
+            <td>1</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Доставала</td>
+            <td>Студент</td>
+            <td>Учебный кабинет</td>
+            <td>9</td>
+            <td>14</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>Вонючая бочка</td>
+            <td>Предмет</td>
+            <td>Корпус</td>
+            <td>6</td>
+            <td>1</td>
+            <td>82</td>
+        </tr>
+        <tr>
+            <td>Боцман</td>
+            <td>Предмет</td>
+            <td>Город</td>
+            <td>7</td>
+            <td>1</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Досдавала</td>
+            <td>Студент</td>
+            <td>Общежитие</td>
+            <td>1</td>
+            <td>105</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Отличник</td>
+            <td>Студент</td>
+            <td>Учебный кабинет</td>
+            <td>5</td>
+            <td>270</td>
+            <td>78</td>
+        </tr>
+        <tr>
+            <td>Восьмёрка</td>
+            <td>Охранник</td>
+            <td>Корпус</td>
+            <td>4</td>
+            <td>1</td>
+            <td>43</td>
+        </tr>
+        <tr>
+            <td>Бабкус</td>
+            <td>Преподаватель</td>
+            <td>Город</td>
+            <td>10</td>
+            <td>71</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>Дедус</td>
+            <td>Преподаватель</td>
+            <td>Учебный кабинет</td>
+            <td>5</td>
+            <td>105</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td>Восставший</td>
+            <td>Студент</td>
+            <td>Город</td>
+            <td>10</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Студенческий пропуск</td>
+            <td>Предмет</td>
+            <td>Общежитие</td>
+            <td>3</td>
+            <td>1392</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Тетрадь с конспектами</td>
+            <td>Предмет</td>
+            <td>Учебный кабинет</td>
+            <td>1</td>
+            <td>13</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>Богодулка</td>
+            <td>Преподаватель</td>
+            <td>Учебный кабинет</td>
+            <td>10</td>
+            <td>1</td>
+            <td>66,6</td>
+        </tr>
+        <tr>
+            <td>Гоблин</td>
+            <td>Охранник</td>
+            <td>Общежитие</td>
+            <td>10</td>
+            <td>1</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Фантом</td>
+            <td>Студент</td>
+            <td>Общежитие</td>
+            <td>1</td>
+            <td>892</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>Магистрантик</td>
+            <td>Преподаватель</td>
+            <td>Корпус</td>
+            <td>2</td>
+            <td>98</td>
+            <td>91</td>
+        </tr>
+        <tr>
+            <td>Шляпник</td>
+            <td>Охранник</td>
+            <td>Корпус</td>
+            <td>7</td>
+            <td>1</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>Проектор в лекционке</td>
+            <td>Предмет</td>
+            <td>Учебный кабинет</td>
+            <td>2</td>
+            <td>5</td>
+            <td>56</td>
+        </tr>
+        <tr>
+            <td>Бизнес-тренер</td>
+            <td>Преподаватель</td>
+            <td>Общежитие</td>
+            <td>6</td>
+            <td>2</td>
+            <td>89</td>
+        </tr>
+        <tr>
+            <td>Якутёнок</td>
+            <td>Охранник</td>
+            <td>Общежитие</td>
+            <td>9</td>
+            <td>1</td>
+            <td>55</td>
+        </tr>
+        <tr>
+            <td>Билет от Загадочника</td>
+            <td>Предмет</td>
+            <td>Учебный кабинет</td>
+            <td>10</td>
+            <td>25</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>Сирена</td>
+            <td>Преподаватель</td>
+            <td>Город</td>
+            <td>6</td>
+            <td>1</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>Всегда полный шатлл</td>
+            <td>Предмет</td>
+            <td>Корпус</td>
+            <td>4</td>
+            <td>4</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Технарь</td>
+            <td>Охранник</td>
+            <td>Город</td>
+            <td>8</td>
+            <td>5</td>
+            <td>67</td>
+        </tr>
+        <tr>
+            <td>Державина 21</td>
+            <td>Предмет</td>
+            <td>Город</td>
+            <td>3</td>
+            <td>1</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Кринжулик</td>
+            <td>Студент</td>
+            <td>Город</td>
+            <td>5</td>
+            <td>1</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Бухач</td>
+            <td>Студент</td>
+            <td>Общежитие</td>
+            <td>6</td>
+            <td>2</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>Феечка</td>
+            <td>Преподаватель</td>
+            <td>Город</td>
+            <td>3</td>
+            <td>1</td>
+            <td>0,1</td>
+        </tr>
+        <tr>
+            <td>Вандерсекс</td>
+            <td>Преподаватель</td>
+            <td>Корпус</td>
+            <td>7</td>
+            <td>4</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>MILF</td>
+            <td>Преподаватель</td>
+            <td>Учебный кабинет</td>
+            <td>2</td>
+            <td>82</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>ЭВМ-машина</td>
+            <td>Предмет</td>
+            <td>Общежитие</td>
+            <td>10</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Дотеры</td>
+            <td>Студент</td>
+            <td>Город</td>
+            <td>9</td>
+            <td>3401</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Сосед-кровосос</td>
+            <td>Студент</td>
+            <td>Общежитие</td>
+            <td>10</td>
+            <td>89</td>
+            <td>95</td>
+        </tr>
+        <tr>
+            <td>Новичок</td>
+            <td>Охранник</td>
+            <td>Корпус</td>
+            <td>4</td>
+            <td>67</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td>Гардеробщица</td>
+            <td>Охранник</td>
+            <td>Корпус</td>
+            <td>1</td>
+            <td>1</td>
+            <td>31</td>
+        </tr>
+        <tr>
+            <td>Сладкопар Жижедуй</td>
+            <td>Студент</td>
+            <td>Общежитие</td>
+            <td>8</td>
+            <td>143</td>
+            <td>99</td>
+        </tr>
+        <tr>
+            <td>Барыга</td>
+            <td>Студент</td>
+            <td>Город</td>
+            <td>5</td>
+            <td>111</td>
+            <td>69</td>
+        </tr>
+        <tr>
+            <td>Бесплатник</td>
+            <td>Преподаватель</td>
+            <td>Город</td>
+            <td>16</td>
+            <td>1</td>
+            <td>51</td>
+        </tr>
+        <tr>
+            <td>Индусы</td>
+            <td>Студент</td>
+            <td>Общежитие</td>
+            <td>8</td>
+            <td>4147713</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Коворкинг аякс</td>
+            <td>Предмет</td>
+            <td>Корпус</td>
+            <td>9</td>
+            <td>1</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>D939</td>
+            <td>Предмет</td>
+            <td>-</td>
+            <td>10</td>
+            <td>1</td>
+            <td>0,01</td>
+        </tr>
+        <tr>
+            <td>Ледяной дождь</td>
+            <td>Предмет</td>
+            <td>Город, Корпус, Общежитие</td>
+            <td>10</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Китаянки</td>
+            <td>Кинжал</td>
+            <td>Корпус</td>
+            <td>10</td>
+            <td>7163</td>
+            <td>84</td>
+        </tr>
+        <tr>
+            <td>Попобава</td>
+            <td>Предмет, Студент</td>
+            <td>Город</td>
+            <td>10</td>
+            <td>1</td>
+            <td>41</td>
+        </tr>
+        <tr>
+            <td>Гигачад</td>
+            <td>Студент</td>
+            <td>Город</td>
+            <td>1</td>
+            <td>5</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Армия инсектоидов</td>
+            <td>Предмет</td>
+            <td>Общежитие</td>
+            <td>9</td>
+            <td>18184917</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Котлета медиум рар</td>
+            <td>Предмет</td>
+            <td>Корпус</td>
+            <td>6</td>
+            <td>6236</td>
+            <td>79</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
